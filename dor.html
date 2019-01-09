@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='trackingMethod: best;'>
+<a-anchor hit-testing-enabled='true'>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+  <a-entity position="0 0 0" scale="0.15 0.15 0.15" obj-model="obj: url(https://raw.githubusercontent.com/darrenekaseptian88/darrenekaseptian88.github.io/master/%3F.obj)"; material="src: url(https://res-console.cloudinary.com/ddzf4gcph/thumbnails/v1/image/upload/v1547007565/MTAwNDgyNDkyLWRpc3RyZXNzLWNyYWNrZWQtdGV4dHVyZS1jcmFja2xlLWJhY2tncm91bmQtY3JhY2stdGV4dHVyZS1lbXB0eS1kZXNpZ24tZWxlbWVudC0=/preview)">
+
+    <a-animation attribute="rotation"
+                 dur="10000"
+                 fill="forwards"
+                 to="0 360 0"
+                 repeat="indefinite">
+               </a-animation>
+  </a-entity>
+
+  <a-entity particle-system="preset: snow; particleCount: 10000"><a-animation attribute="rotation"
+                         dur="10000"
+                         fill="forwards"
+                         to="360 360 360"
+                         repeat="indefinite"></a-animation></a-entity>
+
+
+</a-anchor>
+  	<a-camera-static/>
+    </a-scene>
+  </body>
+</html>
